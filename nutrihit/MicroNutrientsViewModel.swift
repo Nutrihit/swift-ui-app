@@ -28,7 +28,7 @@ public class MicroNutrientsViewModel: ObservableObject {
     }
     
     func load() {
-        guard let url = URL(string: "http://localhost:3000/answer") else { return }
+        guard let url = URL(string: "http://192.168.178.82:3000/profile") else { return }
         extractedFunc(url)
     }
 }

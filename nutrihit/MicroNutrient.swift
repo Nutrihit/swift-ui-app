@@ -9,10 +9,10 @@
 public class MicroNutrient: Codable, Identifiable {
     public let id: Int
     public let label: String
-    public let value: String
+    public let value: Float
     public let unit: String
     
-    public init(id: Int, label: String, value: String, unit: String) {
+    public init(id: Int, label: String, value: Float, unit: String) {
         self.id = id
         self.label = label
         self.value = value
