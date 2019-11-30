@@ -7,7 +7,7 @@
 //
 
 public class MicroNutrient: Codable, Identifiable {
-    public let id: Int
+    public let id: Int?
     public let label: String
     public let value: Float
     public let unit: String

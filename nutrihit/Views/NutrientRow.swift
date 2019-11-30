@@ -12,6 +12,10 @@ struct NutrientRow: View {
     var nutrient: MicroNutrient
 
     var body: some View {
-        Text("\(nutrient.label) \(nutrient.value) \(nutrient.unit)")
+        HStack {
+            Text("\(nutrient.label)")
+            Spacer()
+            Text("\(nutrient.value, specifier: "%.2f") \(nutrient.unit)")
+        }
     }
 }

@@ -15,9 +15,7 @@ public class MicroNutrientsViewModel: ObservableObject {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
                 guard let data = data else { return }
-                print(data)
                 let micronutrients = try JSONDecoder().decode(MicroNutrients.self, from: data)
-                print(micronutrients)
                 DispatchQueue.main.async {
                     self.micronutrients = micronutrients
                 }
@@ -28,7 +26,8 @@ public class MicroNutrientsViewModel: ObservableObject {
     }
     
     func load() {
-        guard let url = URL(string: "http://192.168.178.82:3000/profile") else { return }
+        let urlStringAlex = "http://192.168.178.82:3000/profile"
+        guard let url = URL(string: "http://localhost:3000/profile") else { return }
         extractedFunc(url)
     }
 }
