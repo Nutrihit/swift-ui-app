@@ -13,6 +13,10 @@
 		31DFBF192391C53E00C87E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DFBF182391C53E00C87E96 /* Assets.xcassets */; };
 		31DFBF1C2391C53E00C87E96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DFBF1B2391C53E00C87E96 /* Preview Assets.xcassets */; };
 		31DFBF1F2391C53E00C87E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DFBF1D2391C53E00C87E96 /* LaunchScreen.storyboard */; };
+		31DFBF292391E5D200C87E96 /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFBF282391E5D200C87E96 /* NutritionView.swift */; };
+		31DFBF2B2391F96500C87E96 /* MicroNutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFBF2A2391F96500C87E96 /* MicroNutrient.swift */; };
+		31DFBF2D2391F9C300C87E96 /* NutrientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFBF2C2391F9C300C87E96 /* NutrientRow.swift */; };
+		31DFBF2F2392056B00C87E96 /* MicroNutrientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFBF2E2392056B00C87E96 /* MicroNutrientsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		31DFBF1B2391C53E00C87E96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31DFBF1E2391C53E00C87E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31DFBF202391C53E00C87E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DFBF282391E5D200C87E96 /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
+		31DFBF2A2391F96500C87E96 /* MicroNutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroNutrient.swift; sourceTree = "<group>"; };
+		31DFBF2C2391F9C300C87E96 /* NutrientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientRow.swift; sourceTree = "<group>"; };
+		31DFBF2E2392056B00C87E96 /* MicroNutrientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroNutrientsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,15 @@
 		31DFBF112391C53D00C87E96 /* nutrihit */ = {
 			isa = PBXGroup;
 			children = (
+				31DFBF342392193A00C87E96 /* Views */,
 				31DFBF122391C53D00C87E96 /* AppDelegate.swift */,
 				31DFBF142391C53D00C87E96 /* SceneDelegate.swift */,
-				31DFBF162391C53D00C87E96 /* ContentView.swift */,
 				31DFBF182391C53E00C87E96 /* Assets.xcassets */,
 				31DFBF1D2391C53E00C87E96 /* LaunchScreen.storyboard */,
 				31DFBF202391C53E00C87E96 /* Info.plist */,
 				31DFBF1A2391C53E00C87E96 /* Preview Content */,
+				31DFBF2A2391F96500C87E96 /* MicroNutrient.swift */,
+				31DFBF2E2392056B00C87E96 /* MicroNutrientsViewModel.swift */,
 			);
 			path = nutrihit;
 			sourceTree = "<group>";
@@ -73,6 +83,16 @@
 				31DFBF1B2391C53E00C87E96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31DFBF342392193A00C87E96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31DFBF162391C53D00C87E96 /* ContentView.swift */,
+				31DFBF282391E5D200C87E96 /* NutritionView.swift */,
+				31DFBF2C2391F9C300C87E96 /* NutrientRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31DFBF2D2391F9C300C87E96 /* NutrientRow.swift in Sources */,
+				31DFBF2F2392056B00C87E96 /* MicroNutrientsViewModel.swift in Sources */,
 				31DFBF132391C53D00C87E96 /* AppDelegate.swift in Sources */,
 				31DFBF152391C53D00C87E96 /* SceneDelegate.swift in Sources */,
+				31DFBF2B2391F96500C87E96 /* MicroNutrient.swift in Sources */,
 				31DFBF172391C53D00C87E96 /* ContentView.swift in Sources */,
+				31DFBF292391E5D200C87E96 /* NutritionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
