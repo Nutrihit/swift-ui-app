@@ -25,24 +25,25 @@ struct NutritionView: View {
             
             Button(action: {
                 self.action = 1
-                }) {
-                    HStack {
-                        Text("Generate")
-                            .fontWeight(.semibold)
-                            .font(.title)
-                    }
-                    .padding()
-                    .fixedSize()
-                    .frame(width: CGFloat(200))
-                    .foregroundColor(.white)
-                    .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(CGFloat(40))
+            }) {
+                HStack {
+                    Text("Generate")
+                        .fontWeight(.semibold)
+                        .font(.title)
                 }
-        
+                .padding()
+                .fixedSize()
+                .frame(width: CGFloat(200))
+                .foregroundColor(.white)
+                .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
+                .cornerRadius(CGFloat(40))
+            }
             
-        }.navigationBarTitle(Text(gender))
-            .onAppear {
-                self.viewModel.load()
+            
+        }
+        .navigationBarTitle(Text(gender))
+        .onAppear {
+            self.viewModel.load()
         }
         
     }
